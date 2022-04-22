@@ -1,7 +1,7 @@
 ### Huge thanks to theGuildHall, Dewalt-arch, and Knightsbr1dge for their githubs, 99.9% of this is from their githubs and I would highly reccomend looking at the original content.
 
 ## Clone Repo and Run
-In my setup below and most of the code I assume you are working from your home directory.
+For this code I assume you are working from your home directory and that your HTB ovpn file is for the lab connection and in your ~/Downloads folder.
 
 ```git clone https://github.com/KentVolt/kali-fix.git```
 
