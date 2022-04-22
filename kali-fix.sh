@@ -13,5 +13,12 @@ sudo apt install -y powershell
 mkdir ~/.config/powershell/
 cp Microsoft.PowerShell_profile.ps1 ~/.config/powershell/Microsoft.PowerShell_profile.ps1
 cp vpn* /opt/.
+
+cp ~/Downloads/lab_*.ovpn /etc/openvpn/.
+mv /etc/openvpn/lab_*.ovpn /etc/openvpn/HTB.conf
+systemctl start openvpn@HTB.service
+systemctl enable openvpn@HTB.service
+
+
 sudo ./hydrate-2021.sh
 sudo ./pimpmykali.sh --all
