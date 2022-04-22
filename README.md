@@ -1,4 +1,4 @@
-# Huge thanks to theGuildHall, Dewalt-arch, and Knightsbr1dge for their githubs, 99.9% of this is from their githubs and I would highly reccomend looking at the original content.
+### Huge thanks to theGuildHall, Dewalt-arch, and Knightsbr1dge for their githubs, 99.9% of this is from their githubs and I would highly reccomend looking at the original content.
 
 ## Updating the 'Panels'
 On the top panel, right click one of the three system monitors graphs (the ones showing your 'process', 'memory', and 'network'). Select "Remove from Panel".
