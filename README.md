@@ -1,5 +1,16 @@
 ### Huge thanks to theGuildHall, Dewalt-arch, and Knightsbr1dge for their githubs, 99.9% of this is from their githubs and I would highly reccomend looking at the original content.
 
+## Clone Repo and Run
+In my setup below and most of the code I assume you are working from your home directory.
+
+```git clone https://github.com/KentVolt/kali-fix.git```
+
+After that just simply run kali-fix.sh
+
+```./kali-fix.sh```
+
+-----------------------------------------------------------------
+
 ## Updating the 'Panels'
 On the top panel, right click one of the three system monitors graphs (the ones showing your 'process', 'memory', and 'network'). Select "Remove from Panel".
 
