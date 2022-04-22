@@ -1,6 +1,6 @@
-Huge thanks to theGuildHall, Dewalt-arch, and Knightsbr1dge for their githubs, 99.9% of this is from their githubs and I would highly reccomend looking at the original content.
+# Huge thanks to theGuildHall, Dewalt-arch, and Knightsbr1dge for their githubs, 99.9% of this is from their githubs and I would highly reccomend looking at the original content.
 
-# Updating the 'Panels'
+## Updating the 'Panels'
 On the top panel, right click one of the three system monitors graphs (the ones showing your 'process', 'memory', and 'network'). Select "Remove from Panel".
 
 Next, on the top panel, right click the "shell" icon (the one that looks like a bash prompt). Select "Properties".
@@ -30,3 +30,21 @@ Name: Plank
 Command: plank
 Delay: 0
 Plank will now startup whenever you reboot your machine.
+
+
+## For Kali Users
+With the 2020.3 version of Kali, they implemented a new shell for zsh. To get the HTB IP and server in the terminal prompt some updates are required.
+
+replace vpnbash.sh with vpnbash-kali.sh and rename vpnbash-kali.sh to vpnbash.sh
+```
+mv vpnbash-kali.sh /opt/vpnbash.sh
+```
+
+
+(optional) If you haven't switched your kali terminal to zsh, do that with ```chsh -s /usr/bin/zsh```. Then log out, log back in. You should have a cool looking prompt
+
+Update the PROMPT variable in ```~/.zshrc``` (using nano or your favorite editor) to ```if [[ $(/opt/vpnbash.sh) == *.10.* ]]; then PROMPT="%F{red}┌[%f%F{green}%D{$(/opt/vpnserver.sh)}%f%F{red}]─[%f%F{green}%D{$(/opt/vpnbash.sh)}%f%F{red}][%B%F{%(#.red.blue)}%n%(#.💀.㉿)%m%b%F{%(#.blue.red)}]─[%f%F{magenta}%d%f%F{red}]%f"$'\n'"%F{red}└╼%f%F{green}[%f%F{yellow}★%f]%f%F{yellow}$%f" ;else PROMPT="%F{red}┌[%B%F{%(#.red.blue)}%n%(#.💀.㉿)%m%b%F{%(#.blue.red)}]─[%f%F{magenta}%d%f%F{red}]%f"$'\n'"%F{red}└╼%f%F{green}[%f%F{yellow}★%f]%f%F{yellow}$%f" ;fi```
+
+(optional) Change zshrc ```cp ~/.zshrc ~/.zshrc.bak``` and ```mv ~/gitclones/pwnbox/zshrc ~/.zshrc```
+
+If you want to test it out before changing your ```.zshrc``` file, use ```export PROMPT="%F{red}┌[%f%F{green}%D{$(/opt/vpnserver.sh)}%f%F{red}]─[%f%F{green}%D{$(/opt/vpnbash.sh)}%f%F{red}][%B%F{%(#.red.blue)}%n%(#.💀.㉿)%m%b%F{%(#.blue.red)}]─[%f%F{magenta}%d%f%F{red}]%f"$'\n'"%F{red}└╼%f%F{green}[%f%F{yellow}★%f]%f%F{yellow}$%f"```
