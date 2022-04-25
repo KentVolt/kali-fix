@@ -6,7 +6,6 @@ chmod 777 *
 apt-get install openvpn
 cp /home/kali/kali-fix/vpn* /opt/.
 chmod 777 /opt/vpn*
-chsh -s /usr/bin/zsh
 cp /home/kali/.zshrc /home/kali/.zshrc.bak
 cp /root/.zshrc /root/.zshrc.bak
 cp /home/kali/kali-fix/zshrc /root/.zshrc
@@ -34,3 +33,6 @@ systemctl enable openvpn@HTB.service
 
 /home/kali/kali-fix/hydrate-2021.sh
 /home/kali/kali-fix/pimpmykali.sh --all
+
+
+chsh -s /usr/bin/zsh
