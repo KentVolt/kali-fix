@@ -9,10 +9,6 @@ cd into your kali-fix folder
 
 ```cd kali-fix```
 
-After that be sure to give proper perms (777 is not secure, it's just easy)
-
-```sudo chmod 777 *```
-
 And then just simply run kali-fix.sh
 
 ```sudo ./kali-fix.sh```
