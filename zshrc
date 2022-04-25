@@ -2,7 +2,7 @@
 echo "Welcome to Kali Linux"
 
 # Prompt
-if [[ $(/opt/vpnbash.sh) == *.10.* ]]; then PROMPT="%F{red}┌[%f%F{green}%D{$(/opt/vpnserver.sh)}%f%F{red}]─[%f%F{green}%D{$(/opt/vpnbash.sh)}%f%F{red}][%B%F{%(#.red.blue)}%n%(#.💀.㉿)%m%b%F{%(#.blue.red)}]─[%f%F{magenta}%d%f%F{red}]%f"$'\n'"%F{red}└╼%f%F{green}[%f%F{yellow}★%f]%f%F{yellow}$%f" ;else PROMPT="%F{red}┌[%B%F{%(#.red.blue)}%n%(#.💀.㉿)%m%b%F{%(#.blue.red)}]─[%f%F{magenta}%d%f%F{red}]%f"$'\n'"%F{red}└╼%f%F{green}[%f%F{yellow}★%f]%f%F{yellow}$%f" ;fi
+if [[ $(/opt/vpnbash.sh) == *.10.* ]]; then PROMPT="%F{red}┌[%f%F{green}%D{$(/opt/vpnserver.sh)}%f%F{red}]─[%f%F{green}%D{$(/opt/vpnbash.sh)}%f%F{red}][%f%F{magenta}%d%f%F{red}]%f"$'\n'"%F{red}└╼%f%F{green}[%f%F{yellow}★%f]%f%F{yellow}$%f" ;else PROMPT="%F{red}┌[%f%F{magenta}%d%f%F{red}]%f"$'\n'"%F{red}└╼%f%F{green}[%f%F{yellow}★%f]%f%F{yellow}$%f" ;fi
 
 
 
@@ -23,8 +23,8 @@ alias egrep='egrep --color=auto'
 # Jobs: suggest files / foldername / histsory bellow the prompt
 # Requires: zsh-autosuggestions (packaging by Debian Team)
 # Jobs: Fish-like suggestion for command history
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source /home/kali/kali-fix/zsh-autosuggestions.zsh
+source /home/kali/kali-fix/zsh-autocomplete.plugin.zsh
 # Select all suggestion instead of top on result only
 zstyle ':autocomplete:tab:*' insert-unambiguous yes
 zstyle ':autocomplete:tab:*' widget-style menu-select
