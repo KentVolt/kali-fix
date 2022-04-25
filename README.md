@@ -3,7 +3,7 @@
 ## Clone Repo and Run
 For this code I assume you are working from your home directory and that your HTB ovpn file is for the lab connection and in your ~/Downloads folder.
 
-```git clone https://github.com/KentVolt/kali-fix.git```
+```sudo git clone https://github.com/KentVolt/kali-fix.git```
 
 cd into your kali-fix folder 
 
