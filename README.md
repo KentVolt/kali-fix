@@ -17,6 +17,8 @@ And then just simply run kali-fix.sh
 
 ```sudo ./kali-fix.sh```
 
+### A REBOOT IS RECCOMENDED ON SCRIPT COMPLETION 
+
 There will be errors as I am defining some locations for both root and kali, this script should apply everything to both accounts.
 
 -----------------------------------------------------------------
