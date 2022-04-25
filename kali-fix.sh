@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #i know 777 is bad, im just lazy
-chmod 777 * 
+chmod 777 *
 
 apt-get install openvpn
 cp /home/kali/kali-fix/vpn* /opt/.
@@ -31,7 +31,6 @@ cp /home/kali/Downloads/lab_*.ovpn /etc/openvpn/.
 mv /etc/openvpn/lab_*.ovpn /etc/openvpn/HTB.conf
 systemctl start openvpn@HTB.service
 systemctl enable openvpn@HTB.service
-
 
 ./home/kali/kali-fix/kalhydrate-2021.sh
 ./home/kali/kali-fix/pimpmykali.sh --all
