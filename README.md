@@ -5,9 +5,19 @@ For this code I assume you are working from your home directory and that your HT
 
 ```git clone https://github.com/KentVolt/kali-fix.git```
 
-After that just simply run kali-fix.sh
+cd into your kali-fix folder 
 
-```./kali-fix.sh```
+```cd kali-fix```
+
+After that be sure to give proper perms (777 is not secure, it's just easy)
+
+```sudo chmod 777 *```
+
+And then just simply run kali-fix.sh
+
+```sudo ./kali-fix.sh```
+
+There will be errors as I am defining some locations for both root and kali, this script should apply everything to both accounts.
 
 -----------------------------------------------------------------
 
