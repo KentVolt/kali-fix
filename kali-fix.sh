@@ -1,7 +1,11 @@
 #!/bin/bash
 
+#i know 777 is bad, im just lazy
+chmod 777 * 
+
 apt-get install openvpn
-cp vpn* /opt/.
+cp /home/kali/kali-fix/vpn* /opt/.
+chmod 777 /opt/vpn*
 chsh -s /usr/bin/zsh
 cp /home/kali/.zshrc /home/kali/.zshrc.bak
 cp /root/.zshrc /root/.zshrc.bak
